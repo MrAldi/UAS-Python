@@ -28,9 +28,9 @@ def t1(l1):
         
     elif l1 == 2:
         sist()
-        numin = input("Masukkan limit: ")
+        munim = input("Masukkan limit: ")
         print('')
-        sele = "select * from tbl_students_0554 limit %s" % numin
+        sele = "select * from tbl_students_0554 limit %s" % munim
         cur.execute(sele)
         result = cur.fetchall()
         print(tabulate(result, headers=['No.', 'NIM', 'Nama', 'JK', 'Jurusan', 'Alamat'], tablefmt='psql'))
@@ -38,9 +38,9 @@ def t1(l1):
 
     elif l1 == 3:
         sist()
-        nimin = input("Masukkan NIM: ")
+        minum = input("Masukkan NIM: ")
         print('')
-        sele = "select * from tbl_students_0554 where nim = '%s';" % nimin
+        sele = "select * from tbl_students_0554 where nim = '%s';" % minum
         cur.execute(sele)
         result = cur.fetchall()
         print(tabulate(result, headers=['No.', 'NIM', 'Nama', 'JK', 'Jurusan', 'Alamat'], tablefmt='psql'))    
