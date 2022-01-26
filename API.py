@@ -20,7 +20,7 @@ def sist():
 def t1(l1):
     if l1 == 1:
         sist()
-        sele = "select * from tbl_students_0550"
+        sele = "select * from tbl_students_0554"
         cur.execute(sele)
         result = cur.fetchall()
         print(tabulate(result, headers=['No.', 'NIM', 'Nama', 'JK', 'Jurusan', 'Alamat'], tablefmt='psql'))
@@ -30,7 +30,7 @@ def t1(l1):
         sist()
         numin = input("Masukkan limit: ")
         print('')
-        sele = "select * from tbl_students_0550 limit %s" % numin
+        sele = "select * from tbl_students_0554 limit %s" % numin
         cur.execute(sele)
         result = cur.fetchall()
         print(tabulate(result, headers=['No.', 'NIM', 'Nama', 'JK', 'Jurusan', 'Alamat'], tablefmt='psql'))
@@ -40,7 +40,7 @@ def t1(l1):
         sist()
         nimin = input("Masukkan NIM: ")
         print('')
-        sele = "select * from tbl_students_0550 where nim = '%s';" % nimin
+        sele = "select * from tbl_students_0554 where nim = '%s';" % nimin
         cur.execute(sele)
         result = cur.fetchall()
         print(tabulate(result, headers=['No.', 'NIM', 'Nama', 'JK', 'Jurusan', 'Alamat'], tablefmt='psql'))    
